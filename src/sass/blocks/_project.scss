@@ -1,0 +1,14 @@
+.project {
+    margin-top: 111px;
+    padding: 16px 100px;
+    .project__btn {
+        padding: 22px 40px;
+        margin-top: 40px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 56px;
+        color: #FFFFFF;
+        width: 700px;
+    }
+}

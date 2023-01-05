@@ -1,0 +1,41 @@
+.authorization {
+    background: #20222A;
+    min-height: 900px;
+    padding: 16px;
+    &__exit {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.authorization__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.authorization__input {
+    display: flex;
+    flex-direction: column;
+    .authorization__register {
+        border: 1px solid #3D4554;
+        border-radius: 24px;
+        padding: 15px 20px;
+        background-color: #20222a;
+        width: 392px;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 26px;
+    }
+    .authorization__btn {
+        margin-top: 40px;
+        padding: 17px 0;
+    }
+}
+
+.authorization__logo {
+    margin-left: 137px;
+    margin-bottom: 60px;
+}

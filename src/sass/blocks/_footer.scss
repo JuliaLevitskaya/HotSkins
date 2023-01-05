@@ -1,0 +1,29 @@
+footer {
+    background-color: #20222a;
+    padding: 16px 100px;
+    border-bottom: 2px solid #2b2d37;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        &__email {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            &:hover {
+                transition: 0.5s all;
+                color: #f4c038;
+            }
+        }
+        .footer__sections {
+            display: flex;
+            .footer__section {
+                font-weight: 400;
+                font-size: 14px;
+                margin-left: 32px;
+                color: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+            }
+        }
+    }
+}

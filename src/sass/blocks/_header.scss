@@ -22,6 +22,7 @@ header {
         }
         .header__item {
             display: flex;
+            position: relative;
         }
         .header__help {
             margin-left: 140px;
@@ -58,4 +59,15 @@ header {
             }
         }
     }
+}
+
+.header__language--ru {
+    position: absolute;
+    top: 51px;
+    right: 47%;
+    background-color: #20222a;
+}
+
+.header__language_item {
+    display: none;
 }

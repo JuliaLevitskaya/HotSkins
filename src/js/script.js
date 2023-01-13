@@ -1,11 +1,11 @@
-const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+const button = document.querySelector('.request__btn');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
-});
-
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
+button.addEventListener('click', function() {
+    let x = document.querySelector('.authorization__register--name').value;
+    let y = document.querySelector('.authorization__register--email').value;
+    let j = document.querySelector('.authorization__register--adress').value;
+    if (x, y, j == "") {
+        alert("Необходимо ввести все данные");
+        return false;
+    }
 });

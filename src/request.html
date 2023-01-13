@@ -14,13 +14,14 @@
 </head>
 
 <body>
-    <div class="home">
+    <div class="request">
 
         <header>
             <div class="header">
                 <div class="header__item">
-                    <img src="img/logo-hotskins.svg" alt="" class="header__logo">
-                    <img src="img/HotSkins.svg" alt="" class="header__title">
+                    <a href="index.html"><img src="img/logo-hotskins.svg" alt="" class="header__logo">
+                        <img src="img/HotSkins.svg" alt="" class="header__title"></a>
+
                     <div class="header__help">
                         <div class="header__help-subtitle">Помощь</div>
                         <div class="header__help-subtitle">Контакты</div>
@@ -38,6 +39,20 @@
             </div>
         </header>
 
+        <div class="request__connection">
+            <img src="img/Frame 426.svg" alt="" class="request__connection-logo">
+
+            <div class="request__connection-field">
+                <div class="request__connection-title">Заявка на подключение</div>
+                <input type="text" class="authorization__register authorization__register--name" placeholder="Ваше имя">
+                <input type="email" class="authorization__register authorization__register--email" placeholder="Ваш email">
+                <input type="text" class="authorization__register authorization__register--adress" placeholder="Адрес сайта">
+                <input type="text" class="request__connection-contacts authorization__register" placeholder="Ваши контакты (Телефон, Telegram, WhatsApp...)">
+                <button class="request__btn button">Отправить заявку</button>
+            </div>
+
+        </div>
+
     </div>
 
     <footer>
@@ -52,6 +67,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/language.js"></script>
 </body>
 
 </html>

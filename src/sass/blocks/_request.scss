@@ -1,0 +1,31 @@
+.request {
+    min-height: 900px;
+    background-color: #20222A;
+    .request__connection-logo {
+        height: 354px;
+        width: 392px;
+        margin-top: 30px;
+    }
+    .request__connection {
+        margin-top: 142px;
+        padding: 16px 212px;
+        display: flex;
+        justify-content: space-between;
+        &-field {
+            display: flex;
+            flex-direction: column;
+            .request__connection-title {
+                font-weight: 500;
+                font-size: 32px;
+                color: #FFFFFF;
+            }
+            .request__connection-contacts {
+                padding: 15px 20px 70px 20px;
+            }
+            .request__btn {
+                margin-top: 40px;
+                width: 191px;
+            }
+        }
+    }
+}

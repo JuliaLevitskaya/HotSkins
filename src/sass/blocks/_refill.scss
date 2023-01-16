@@ -1,0 +1,82 @@
+.refill {
+    min-height: 220px;
+    padding: 50px 100px 30px 100px;
+    background: #272E3B;
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+    &__field {
+        display: flex;
+        justify-content: space-between;
+    }
+    .selection__field {
+        display: flex;
+        justify-content: space-between;
+        .selection__update {
+            position: relative;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-top: 32px;
+            cursor: pointer;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: -35px;
+                background-image: url('../img/update.svg');
+            }
+        }
+    }
+    .selection__games {
+        display: flex;
+        margin-top: 40px;
+        .selection__game {
+            display: flex;
+            border: 1px solid #3D4554;
+            border-radius: 0px 16px 16px 0px;
+            padding: 15px 60px 15px 15px;
+            cursor: pointer;
+            .selection__game-title {
+                font-weight: 500;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-left: 16px;
+                margin-top: 9px;
+            }
+        }
+        .selection__game--csgo {
+            border-radius: 16px 0px 0px 16px;
+        }
+    }
+    .refill__info {
+        margin-top: 10px;
+        display: flex;
+        &-subtitle {
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-right: 30px;
+        }
+        .refill__info-subtitle--separator {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 22px;
+                background: #3D4554;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.selection__edit {
+    border: 2px solid #F4C038;
+    background: rgba(239, 188, 58, 0.1);
+}

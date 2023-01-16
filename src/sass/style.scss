@@ -3,6 +3,7 @@
 @import 'blocks/footer';
 @import 'blocks/authorization';
 @import 'blocks/request';
+@import 'blocks/refill';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 .home {
     min-height: 900px;
@@ -44,4 +45,3 @@
 .show {
     display: block;
 }
-

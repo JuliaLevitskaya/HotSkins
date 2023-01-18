@@ -1,0 +1,127 @@
+.exchange {
+    min-height: 250px;
+    background: #20222A;
+    padding: 40px 100px;
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-top: 12px;
+    }
+    .exchange__search {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &-engine {
+            border: 1px solid #3D4554;
+            border-radius: 24px;
+            padding: 15px 120px 15px 40px;
+            background: #20222A;
+            outline: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &-img {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 23.3%;
+            top: 16px;
+            cursor: pointer;
+        }
+        .exchange__title {
+            font-weight: 500;
+            font-size: 32px;
+            color: #FFFFFF;
+        }
+    }
+    .exchange__field {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #3D4554;
+        padding-bottom: 32px;
+        .rarity {
+            display: flex;
+            margin-top: 40px;
+            align-items: center;
+            &-title {
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-right: 25px;
+            }
+            .rarity__list-items {
+                display: flex;
+            }
+            .rarity__list {
+                display: flex;
+                list-style-type: none;
+                .rarity__list-item {
+                    border: 1px solid #FFCE50;
+                    border-radius: 4px;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+                .rarity__list-item--red {
+                    border: 1px solid #ED422B;
+                }
+                .rarity__list-item--pink {
+                    border: 1px solid #CF309C;
+                }
+                .rarity__list-item--purple {
+                    border: 1px solid #8533ED;
+                }
+                .rarity__list-item--blue {
+                    border: 1px solid #275CE4;
+                }
+                .rarity__list-item--dark {
+                    border: 1px solid #6AB2F4;
+                }
+                .rarity__list-item--white {
+                    border: 1px solid #FFFFFF;
+                }
+                .rarity__list-number {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .hot-prices {
+            display: flex;
+            align-items: center;
+            margin: 35px 0 0 0;
+            &__img {
+                margin-right: 8px;
+                width: 44px;
+                height: 26px;
+                cursor: pointer;
+            }
+            &__icon {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
+            }
+            &__title {
+                font-weight: 400;
+                position: relative;
+                font-size: 16px;
+                color: #FFFFFF;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/help3.svg');
+                    right: -30px;
+                }
+            }
+        }
+    }
+}

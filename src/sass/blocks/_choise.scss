@@ -1,0 +1,156 @@
+.choise__skins {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+    .choise {
+        display: flex;
+        img {
+            cursor: pointer;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #F4C038;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+    .price {
+        display: flex;
+        &__title {
+            font-weight: 400;
+            font-size: 16px;
+            position: relative;
+            color: #FFFFFF;
+            margin-left: 20px;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-image: url('../img/downs.svg');
+                right: -27px;
+                top: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.items-exchange {
+    margin-top: 40px;
+    .item-exchange {
+        margin-top: 40px;
+        display: flex;
+        li {
+            height: 104px;
+            cursor: pointer;
+            margin-left: 18px;
+            position: relative;
+            padding: 12px 16px 25px 16px;
+            background: #272E3B;
+            border-radius: 16px;
+            list-style-type: none;
+            &:hover {
+                transition: all 0.2s;
+                box-shadow: rgba(173, 49, 245, 0.713) 0px 5px 15px;
+            }
+        }
+        &__price {
+            font-weight: 500;
+            font-size: 13px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 15px;
+        }
+        .item-exchange__price--orange {
+            color: #F47523;
+            margin-top: 15px;
+        }
+        &__highlighter {
+            width: 113px;
+            height: 48px;
+            position: absolute;
+            bottom: 0px;
+            left: 4px;
+        }
+        .item-exchange__none {
+            border: 1px dashed #3D4554;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-left: 18px;
+            position: relative;
+            padding: 12px 16px 23px 16px;
+            list-style-type: none;
+            opacity: 0.5;
+            &:hover {
+                transition: all 0.2s;
+                box-shadow: rgba(200, 0, 0, 0.713) 0px 5px 15px;
+            }
+        }
+        .amount-of-days {
+            position: relative;
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 3px;
+            margin-left: 15px;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../img/lock.svg');
+                width: 12px;
+                height: 12px;
+                left: -4px;
+                top: 1px;
+            }
+        }
+        .amount-of-days--soon {
+            font-weight: 400;
+            font-size: 12px;
+            text-align: center;
+            color: #F4C038;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../img/lock2.svg');
+                width: 12px;
+                height: 12px;
+                left: -6px;
+                top: 1px;
+            }
+        }
+    }
+    .exchange__none {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+    .exchange__help {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #F4C038;
+        margin-top: 15px;
+        cursor: pointer;
+        &:hover {
+            transition: all 0.5s;
+            color: #f48a38;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/help4.svg');
+            width: 20px;
+            height: 20px;
+            left: 45%;
+            top: -1px;
+        }
+    }
+}

@@ -31,6 +31,10 @@
                 left: -35px;
                 background-image: url('../img/update.svg');
             }
+            &:hover {
+                transition: 0.5s all;
+                color: #e1b651;
+            }
         }
     }
     .selection__games {

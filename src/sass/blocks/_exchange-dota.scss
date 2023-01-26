@@ -1,0 +1,60 @@
+.item-exchange-dota {
+    margin-top: 40px;
+    display: flex;
+    li {
+        background: #272E3B;
+        border-radius: 16px;
+        list-style-type: none;
+        position: relative;
+        padding: 0 0 10px 0;
+        margin-left: 18px;
+        cursor: pointer;
+        width: 120px;
+        &:hover {
+            transition: all 0.2s;
+            box-shadow: rgba(173, 49, 245, 0.713) 0px 5px 15px;
+        }
+        img {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+    &_price {
+        font-weight: 500;
+        font-size: 13px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+    .item-exchange__price {
+        font-size: 11px;
+    }
+    .item-exchange__price--orange {
+        color: #F47523;
+        margin-top: 15px;
+    }
+    &__highlighter {
+        width: 113px;
+        height: 48px;
+        position: absolute;
+        bottom: 0px;
+        left: 4px;
+    }
+    .item-exchange__none {
+        border: 1px dashed #3D4554;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-left: 16px;
+        position: relative;
+        padding: 0 0 16px 0;
+        list-style-type: none;
+        opacity: 0.5;
+        &:hover {
+            transition: all 0.2s;
+            box-shadow: rgba(200, 0, 0, 0.713) 0px 5px 15px;
+        }
+    }
+}
+
+.items-exchange {
+    display: none;
+}

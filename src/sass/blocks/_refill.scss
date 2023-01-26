@@ -37,27 +37,6 @@
             }
         }
     }
-    .selection__games {
-        display: flex;
-        margin-top: 40px;
-        .selection__game {
-            display: flex;
-            border: 1px solid #3D4554;
-            border-radius: 0px 16px 16px 0px;
-            padding: 15px 60px 15px 15px;
-            cursor: pointer;
-            .selection__game-title {
-                font-weight: 500;
-                font-size: 18px;
-                color: #FFFFFF;
-                margin-left: 16px;
-                margin-top: 9px;
-            }
-        }
-        .selection__game--csgo {
-            border-radius: 16px 0px 0px 16px;
-        }
-    }
     .refill__info {
         margin-top: 10px;
         display: flex;
@@ -80,7 +59,75 @@
     }
 }
 
-.selection__edit {
-    border: 2px solid #F4C038;
-    background: rgba(239, 188, 58, 0.1);
+.selection__games {
+    display: flex;
+    margin-top: 40px;
+}
+
+.selection__game {
+    display: flex;
+    border: 1px solid #3D4554;
+    border-radius: 0px 16px 16px 0px;
+    padding: 15px 60px 15px 15px;
+    cursor: pointer;
+}
+
+.selection__game-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 16px;
+    margin-top: 9px;
+}
+
+.selection__game--csgo {
+    border-radius: 16px 0px 0px 16px;
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.switch__input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.switch__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #272E3B;
+    border: 1px solid #3D4554;
+    border-radius: 24px;
+    transition: all 0.5s;
+    &::before {
+        content: '';
+        position: absolute;
+        cursor: pointer;
+        left: 4px;
+        bottom: 3px;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 24px;
+        transition: all 0.5s;
+    }
+}
+
+.switch__input:checked+.switch__slider {
+    background-color: rgb(112, 234, 94);
+}
+
+.switch__input:checked+.switch__slider::before {
+    transform: translateX(16px);
 }

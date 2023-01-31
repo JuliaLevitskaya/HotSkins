@@ -70,6 +70,9 @@
     border-radius: 0px 16px 16px 0px;
     padding: 15px 60px 15px 15px;
     cursor: pointer;
+    &:hover {
+        background-color: #303742;
+    }
 }
 
 .selection__game-title {

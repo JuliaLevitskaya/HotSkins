@@ -156,6 +156,7 @@
         img {
             background: #272E3B;
             border-radius: 4px;
+            margin-right: 20px;
             padding: 5px;
         }
         .search__item-descr {
@@ -171,4 +172,8 @@
             }
         }
     }
+}
+
+.hide {
+    display: none;
 }
